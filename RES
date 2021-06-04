@@ -1,0 +1,56 @@
+echo -e "NĐH KILL GAME"
+echo -e "ᴡᴀɪᴛ.. ᴀɴᴛɪʙᴀɴ ᴏɴ ᴘʀᴏᴄᴇss"
+echo -e "ᴀɴᴛɪʙᴀɴ ᴅᴏɴᴇ ᴡᴀɪᴛ..."
+
+su -c iptables -F
+su -c iptables -X
+su -c iptables --flush
+iptables -F
+iptables -X
+iptables --flush
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/comm.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/comm.zip
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/config2.xml.0b7e0050
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/config3.xml
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/tdm_cache.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/tss_cef.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/tss_emu_c2.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/tss_lcp.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/tss_r_record.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/tss_emu_c2.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/mn_cache.dat
+rm -rf /data/data/com.riotgames.league.wildriftvn/files/tss_tmp/tss.ano3.dat
+chmod 000 /data/data/com.riotgames.league.wildriftvn/files/ss_tmp
+chmod 000 /data/data/com.riotgames.league.wildriftvn/files/tss_tmp
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/comm.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/comm.zip
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/config2.xml.0b7e0050
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/config3.xml
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/tdm_cache.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/tss_cef.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/tss_emu_c2.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/tss_lcp.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/tss_r_record.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/tss_emu_c2.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/mn_cache.dat
+rm -rf /data/data/com.riotgames.league.wildrift/files/tss_tmp/tss.ano3.dat
+chmod 000 /data/data/com.riotgames.league.wildrift/files/ss_tmp
+chmod 000 /data/data/com.riotgames.league.wildrift/files/tss_tmp
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/comm.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/comm.zip
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/config2.xml.0b7e0050
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/config3.xml
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/tdm_cache.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/tss_cef.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/tss_emu_c2.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/tss_lcp.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/tss_r_record.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/tss_emu_c2.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/mn_cache.dat
+rm -rf /data/data/com.riotgames.league.wildrifttw/files/tss_tmp/tss.ano3.dat
+chmod 000 /data/data/com.riotgames.league.wildrifttw/files/ss_tmp
+chmod 000 /data/data/com.riotgames.league.wildrifttw/files/tss_tmp
+ip6tables=/system/bin/ip6tables
+iptables=/system/bin/iptables
+iptables -I OUTPUT -p all -m string --string "down.anticheatexpert.com" --algo bm -j DROP &>/dev/null
+iptables -I OUTPUT -p all -m string --string "down.anticheatexpert.com" --algo kmp -j DROP &>/dev/null
